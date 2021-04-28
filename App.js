@@ -12,8 +12,8 @@ import {
 } from "@expo-google-fonts/fredoka-one";
 
 import { ThemeProvider } from "styled-components/native";
-
 import { theme } from "./src/utils/theme";
+import { GetStartedScreen } from "./src/screens/get-started/get-started.screen";
 
 export default function App() {
   const [ralewayLoaded] = useRaleway({
@@ -32,8 +32,7 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <View style={{flex: 1, alignItems: "center", justifyContent: "center" }}>
-          <Text>Our React Native Blank Canvas</Text>
-          <Text>make shit happen on this fucking app</Text>
+          <GetStartedScreen/>
         </View>
       </ThemeProvider>
     </>
